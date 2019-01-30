@@ -1,5 +1,5 @@
 # the-platform
-an playground to use only the platforn
+an playground to use only the platform
 
 to start just serve this files with e.g watch-http-server
 
