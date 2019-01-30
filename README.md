@@ -1,4 +1,4 @@
-# the-pltaform
+# the-platform
 an playground to use only the platforn
 
 to start just serve this files with e.g watch-http-server
