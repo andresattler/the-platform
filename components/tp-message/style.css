@@ -6,13 +6,13 @@
 }
 
 .message {
-  height: 150px;
+  height: 115px;
   width: 90%;
   display: grid;
   grid-template-areas:
-            "left top right"
-            "left bottom right";
-  grid-template-columns: 225px 1fr 50px;
+            "left space top right"
+            "left space bottom right";
+  grid-template-columns: 157px 5px 1fr 50px;
   grid-template-rows: 50px 1fr;
   box-sizing: border-box;
   padding: 5px;
