@@ -2,7 +2,8 @@ import { LitElement, html } from 'https://unpkg.com/lit-element/lit-element.js?m
 
 import './components/my-element.js'
 import './components/my-counter.js'
-import './components/side-nav.js'
+import './components/tp-header/index.js'
+import './components/tp-message/index.js'
 
 class MyApp extends LitElement {
   constructor() {
@@ -11,11 +12,12 @@ class MyApp extends LitElement {
   }
   render() {
     return html`
-    
     <my-counter
       @valueChange=${(e) => this.log(e)}
       .value="${this.customValue}">
     </my-counter>
+    <tp-message></tp-message>
+
     `
   }
   log(e) {

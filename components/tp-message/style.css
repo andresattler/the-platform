@@ -1,0 +1,44 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.message {
+  height: 150px;
+  width: 90%;
+  display: grid;
+  grid-template-areas:
+            "left top right"
+            "left bottom right";
+  grid-template-columns: 225px 1fr 50px;
+  grid-template-rows: 50px 1fr;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.message:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.image {
+  height: 100%;
+  grid-area: left;
+}
+
+.title {
+ grid-area: top;
+}
+
+.description {
+  grid-area: bottom;
+}
+
+.button {
+  border: 0;
+  grid-area: right;
+  cursor: pointer;
+}

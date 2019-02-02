@@ -1,6 +1,6 @@
 import { LitElement, html } from 'https://unpkg.com/lit-element/lit-element.js?module'
 
-class SideNav extends LitElement {
+class Header extends LitElement {
   static get properties() {
     return {
       open: { type: Boolean }
@@ -12,9 +12,8 @@ class SideNav extends LitElement {
   }
 
   render() {
-    console.log(this.open)
     return html`
-    <link rel="stylesheet" href="./components/side-nav.css">
+    <link rel="stylesheet" href="./components/tp-header/style.css">
       <header class='header'>
           <button
             class='menu-button'
@@ -39,4 +38,4 @@ class SideNav extends LitElement {
   }
 }
 
-customElements.define('side-nav', SideNav)
+customElements.define('tp-header', Header)
