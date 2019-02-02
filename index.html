@@ -10,6 +10,11 @@
     <tp-header></tp-header>
     <my-element></my-element>
     <my-app></my-app>
+      <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+        }
+      </script>
     <script type='module' src="./index.js"></script>
   </body>
 </html>
