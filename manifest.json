@@ -1,0 +1,8 @@
+{
+  "name": "The Platform",
+  "short_name": "the platform",
+  "start_url": ".",
+  "theme_color": "#333",
+  "display": "standalone",
+  "description": "an playground to play with the latest platform features"
+}
