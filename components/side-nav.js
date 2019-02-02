@@ -12,15 +12,20 @@ class SideNav extends LitElement {
   }
 
   render() {
+    console.log(this.open)
     return html`
     <link rel="stylesheet" href="./components/side-nav.css">
-      <button @click="${() => this.open = true}">
+      <header class='header'>
+          <button
+            class='menu-button'
+            @click="${() => this.open = !this.open}"
+          >
           Menu
-      </button>
-
+        </button>
+      </header>
       <aside
         @click="${() => this.open = false}"
-        class="side-nav ${this.open ? 'side-nav--open' : ''}"
+        class="side-nav ${this.open === true ? 'side-nav--open' : ''}"
       >
       <nav class="side-nav__container ${this.open ? 'side-nav__container--open' : ''}">
         <p>Test</p>
