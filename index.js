@@ -4,6 +4,9 @@ import './components/my-element.js'
 import './components/my-counter.js'
 import './components/tp-header/index.js'
 import './components/tp-message/index.js'
+import './components/tp-link/index.js'
+import './components/tp-router/index.js'
+import './components/tp-route/index.js'
 
 class MyApp extends LitElement {
   constructor() {

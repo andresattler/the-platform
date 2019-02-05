@@ -31,7 +31,6 @@ onfetch = evt => {
     caches.match(evt.request)
       .then(match => {
         if (match) {
-          console.log('match', evt.request)
           return match 
         }
         return fetch(evt.request)

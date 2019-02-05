@@ -10,11 +10,19 @@
   </head>
   <body>
     <tp-header></tp-header>
+    <tp-link to="/list-view">List_View</tp-link>
+    <tp-link to="/masonary">Masonary</tp-link>
+    <tp-router>
+      <tp-route path='/list-view'>1</tp-route>
+      <tp-route path='/masonary'>2</tp-route>
+      <tp-route path='/'>3</tp-route>
+    </tp-router>
     <my-element></my-element>
     <my-app></my-app>
       <script>
+        window.addEventListener('test', () => console.log('test listener'))
         if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('./sw.js')
+          // navigator.serviceWorker.register('./sw.js')
         }
       </script>
     <script type='module' src="./index.js"></script>
