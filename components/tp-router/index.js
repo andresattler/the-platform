@@ -11,15 +11,15 @@ class Router extends HTMLElement {
   } 
 
   connectedCallback() {
-    console.log('connected')
-    this.childRoutes = Array.from(this.querySelectorAll(`tp-route`));
     window.addEventListener('popstate', this._valueChanged)
     window.addEventListener('page-navigation', this._valueChanged)
+    window.addEventListener('load', this._valueChanged)
+
   }
 
   _valueChanged(e) {
     const url = new URL(window.location)
-    console.log(this.childRoutes)
+    this.childRoutes = Array.from(this.querySelectorAll(`tp-route`));
     this.prevRoute = this.routeToDisplay && this.routeToDisplay
     this.routeToDisplay = this.childRoutes.find((route) => route.path === url.pathname)
     this.shadowRoot.appendChild(this.routeToDisplay)
